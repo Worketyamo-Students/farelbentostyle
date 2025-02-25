@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,229 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="bg-bgc w-screen h-screen overflow-x-hidden" >
+
+<body class="bg-black px-10 w-screen h-screen overflow-x-hidden">
     <style type="text/tailwindcss">
         @theme{
            --color-premiere:#F35034;
            --color-secondaire:#C0C0C0;
            --color-trois:#FFFFFF;
-           --color-bgc:#1B1B1B;
            --color-linear1:#E63E21;
            --color-linear2:#33130E00;
-           --font-family: "Inter" 
-           --color-bgcnav:#1B1B1B;
+           --font-family: "Inter" ;
            --color-bordercol:#262626;
+           --color-bgc:#1B1B1B;
+           --color-onelinear:#E63E21;
+           --color-twolinear:#33130E00;
         }
         
     </style>
-   <section class="flex p-8 justify-between" >
-    <div class="border-1   rounded-full w-15  bg-bgc items-center border-bordercol justify-center flex " ><img class="" src="assets/images/petitlogo.svg" alt="logo"></div>
-    <div class="flex justify-between w-full bg-bgcnav border-1 border-bordercol rounded-full" >
-    <div class="flex  justify-between w-full items-center   rounded-full ">
-        <a class="text-premiere  font-[Inter]  font-normal px-10 text-xl " href="#">About</a>
-        <a class="text-trois font-[Inter] font-normal text-xl lg:block hidden "  href="#">Portfolio</a>
-        <a class="text-trois font-[Inter]font-normal text-xl lg:block hidden px-10 "   href="#">Contact</a>
-    </div>
-    <div class="lg:hidden px-10 flex items-center" ><img class="w-10" src="assets/images/menu.svg" alt=""></div>
-  </div>
-   </section>
-   <!-- fin navbaerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
-    <section class=" lg:flex   lg:flex-row-reverse px-10 justify-between" >
-        <span class="flex  items-center gap-2 rounded-full border-1 w-[150px] h-[20px] border-bordercol " >
-            <div class="border-1 rounded-full gap-2 flex w-[10px] h-[10px] bg-premiere " ></div>
-            <h5 class="text-secondaire text-sm font-[Inter]font-medium" >AVAILABLE FOR JOB</h5>
-        </span>
-        <span class="flex gap-2  items-center" >
-            <h4 class="text-secondaire text-lg  font-[Inter] font-medium" >UI/UX </h4>
-            <h3 class="text-secondaire text-base  font-[Inter] font-medium " >Designer</h3>
-        </span>
-        
-    </section>
-    <!-- fin partie oneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-     <section class="lg:flex lg:justify-between px-10 mt-10   lg: flex-row-reverse " >
-        <div class=" border-1 w-[200px] h-[200px] flex bg-bgcnav  justify-center items-center rounded-full">
-            <img  src="assets/images/photo.svg" alt="">
+    <section class="flex p-8 bg-bgc border-2 w-(200px) h-(310px) justify-between">
+        <div class="border-1   rounded-full w-15  bg-bgc items-center border-bordercol justify-center flex "><img
+                class="" src="assets/images/petitlogo.svg" alt="logo"></div>
+        <div class="flex justify-between w-full bg-bgcnav border-1 border-bordercol rounded-full">
+            <div class="flex  justify-between w-full items-center   rounded-full ">
+                <a class="text-premiere  font-[Inter]  font-normal px-10 text-xl " href="#">About</a>
+                <a class="text-trois font-[Inter] font-normal text-xl lg:block hidden " href="#">Portfolio</a>
+                <a class="text-trois font-[Inter]font-normal text-xl lg:block hidden px-10 " href="#">Contact</a>
+            </div>
+            <div class="lg:hidden px-10 flex items-center"><img class="w-10" src="assets/images/menu.svg" alt=""></div>
         </div>
-        <span   >
-            <h1  class="font-[Inter] text-trois font-semibold text-lg ">I'am jowanna farel</h1>
-            <p class="text-secondaire font-[Inter] mt-6 text-lg" >I design digital products with <br> 
-                great experience.</p>
-                <div class="flex  mt-6  gap-4" >
-                    <div  class="bg-premiere border-1 w-20 text-secondaire "> Hire me  +</div>
-                    
-                    <div class="text-secondaire font-[Inter] bg-bgc gap-2 flex border-1" >Copy Email <img src="assets/images/Vector (9).svg" alt=""> </div>
+    </section>
+    <!-- fin navbaerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+   
+    <!-- fin partie oneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+
+    <!-- <section class="  lg:flex lg:justify-between  lg:flex-row-reverse  px-10" >
+        <span class="flex  items-center gap-2 rounded-full border-1 w-[150px] h-[20px] border-bordercol ">
+            <div class="border-1 rounded-full gap-2 flex w-[10px] h-[10px] bg-premiere "></div>
+            <h5 class="text-secondaire text-sm font-[Inter]font-medium">AVAILABLE FOR JOB</h5>
+        </span>
+        <span class="flex gap-2  items-center">
+            <h4 class="text-secondaire text-lg  font-[Inter] font-medium">UI/UX </h4>
+            <h3 class="text-secondaire text-base  font-[Inter] font-medium ">Designer</h3>
+        </span>
+        <div class=" border-1 w-[200px] h-[200px] flex bg-bgcnav  justify-center items-center rounded-full">
+            <img src="assets/images/photo.svg" alt="">
+        </div>
+      
+
+    </section> -->
+
+    <section
+        class="lg:flex lg:justify-between px-6 mt-10 rounded-xl  bg-bgc border-bordercol border-2  w-auto h-(320px) lg:flex-col ">
+
+
+        <div class="flex lg:justify-between lg:items-start lg:flex-row  flex-col" >
+            <span class="flex  items-center gap-2 px-2 items-center justify-center rounded-full border-1 w-[200px] h-[20px] border-bordercol ">
+                <div class="border-1 rounded-full  gap-2 flex w-[10px] h-[10px] bg-premiere "></div>
+                <h5 class="text-secondaire text-xs font-[Inter]font-medium">AVAILABLE FOR JOB</h5>
+            </span>
+            
+            <span class="flex gap-2  items-center">
+                <h4 class="text-secondaire text-lg  font-[Inter] font-medium">UI/UX Designer </h4>
+            </span>
+        </div>
+
+           <div class="lg:flex lg:justify-between lg:flex-row-reverse">
+            <div class=" border-1 w-[200px] h-[200px] flex bg-bgcnav  mt-4 justify-center items-center rounded-full">
+                <img src="assets/images/photo2.svg" alt="">
+            </div>
+            
+            <span class="lg:flex lg:flex-col">
+                <h1 class="font-[Inter] text-trois font-semibold text-lg ">I'am jowanna farel</h1>
+                <p class="text-secondaire font-[Inter] mt-6 text-lg"> je fais dans le developpement web <br>
+                    jai aucune experience a part celle <br> des formation.</p>
+
+                <div  class="flex gap-2">
+                    <div  class=" rounded-[15px] lg:h-10 lg:w-[150px] border-black flex border-transparent object-cover lg:justify-center items-center">
+                        <button type="button"  class="text-secondaire  font-[Inter] bg-premiere text-[11px] lg:text-[16px] border border-r-black bg-cover cursor-progress gap-2  border-bordercol w-20 h-6 flex border-1">
+                            Hire me
+                        </button>
+                        <div class="border-1 w-10 h-6  bg-premiere  border-bordercol" >
+                            <p>+</p>
+                          </div>
+                    </div>
+      
+                    <div  class=" flex  items-center">
+                        <div  class="text-secondaire font-[Inter] bg-bgc gap-2  text-xs border-bordercol w-full h-6 flex border-1">
+                            Copy Email
+                        </div>
+                        <div class="border-1 w-10 h-6  bg-bgc border-bordercol" >
+                            <img src="assets/images/Vector (9).svg" alt="">
+                        </div>
+                    </div>
                     
                 </div>
-        </span>
+                     
+            </span>
+           </div>
+        </section>
+
+        <!-- htdijkgcdyichf -->
+    <div class="lg:grid grid-cols-2 grid-rows-auto gap-5">
+        <section class="px-6 mt-6  bg-bgc border-3  rounded-xl bg-bgc border-bordercol h-(320px) w-(300px) row-span-2 lg:order-1">
+            <div class="flex items-center gap-1">
+                <div class="border-1 rounded-full gap-2 flex w-[10px] h-[10px] bg-secondaire"></div>
+                <h1 class="text-secondaire font-normal font-[Inter]">Recent Work</h1>
+            </div>
+            <div class="flex  justify-between mt-6 ">
+                <div class="flex flex-col gap-1">
+                    <h5 class=" text-premiere font-[Inter] ">Product designer</h5>
+                    <p class="text-secondaire font-[Inter] ">2023 - Present</p>
+                </div>
+                <div class="text-secondaire  font-[Inter]">Figma</div>
+            </div>
+            <div class="flex justify-between mt-6 ">
+                <div class="flex flex-col  ">
+                    <h5 class=" text-trois font-[Inter] ">Product designer</h5>
+                    <p class="text-secondaire text-sm font-[Inter] ">2023 - Present</p>
+                </div>
+                <div class="text-secondaire  font-[Inter]">Figma</div>
+            </div>
+            <div class="flex  justify-between mt-6 ">
+                <div class="flex flex-col ">
+                    <h5 class=" text-trois font-[Inter] ">UI/UX designer</h5>
+                    <p class="text-secondaire font-[Inter] text-sm">2021 - 2022</p>
+                </div>
+                <div class="text-secondaire font-[Inter] ">Google</div>
+            </div>
+            <div class="flex  justify-between mt-6 ">
+                <div class="flex flex-col ">
+                    <h5 class=" text-trois font-[Inter] ">Product designer</h5>
+                    <p class="text-secondaire font-[Inter] text-sm">2023 - Present</p>
+                </div>
+                <div class="text-secondaire font-[Inter] ">Figma</div>
+            </div>
+        </section>
+        <!-- section""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""333333333333333333" -->
+         <section class="flex flex-col justify-center items-center   mt-6   h-(320px) w-(300px) lg:order-2" >
+            <div class="border-2  mt-6 flex w-full h-20 justify-center border-bordercol rounded-xl  text-secondaire items-center  bg-gradient-to-bl to-20% from-onelinear to-gbcnav " >
+                <h3 class="text-trois font-medium font-[Inter]" >Product design</h3>
+            </div>
+            <div class="flex  py-6 justify-center gap-5 w-full" >
+                <div>
+                    <h3 class="text-trois  border-2 text-xs  border-bordercol flex justify-center  font-medium font-[Inter] items-center bg-gradient-to-bl to-20% from-onelinear to-gbcnav   rounded-xl bg-bgcnav w-35 h-20 flex-1"  >User Experience</h3>
+                </div>
+                <div>
+                    <h3 class="text-trois  border-2 text-xs   border-bordercol flex justify-center  font-medium font-[Inter] items-center bg-gradient-to-tr to-20% from-onelinear to-gbcnav   rounded-xl bg-bgcnav w-35 h-20 flex-1"  >NoCode develop</h3>
+                </div>
+            </div>
+         </section>
+         <!-- section444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 -->
+          <section class="bg-bgc border-2 p-10 mt-6 rounded-xl lg:order-4 row-span-2" >
        
-     </section>
-  
-    
+                
+                    <div class="flex justify-between"  >
+                      <div class="" >
+                        <h5 class="text-trois">iOS Mobile app</h5>
+                        <h4 class="text-secondaire"> Product develop</h4>
+                      </div>
+                      <div class=" border-1 rounded-full bg-premiere h-4 w-4 flex justify-center items-center ">
+                        <div ><img src="assets/images/fleche.svg" alt=""></div>
+                      </div>
+                    </div>
+                 
+                    <div class="flex justify-center items-center mt-6 " >
+                        <img  class="lg:w-90 mt-15" src="assets/images/iphone.svg" alt="">
+                   
+                    </div>
+            </section>
+          <!-- SECTIONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN55555555555555555555555555555 -->
+          <section class="bg-bgc rounded-xl border-2 p-10 mt-4 lg:order-3 row-span-2 " >
+            <span class="" >
+                <div class="flex justify-between"  >
+                  <div class="" >
+                    <h5 class="text-trois">AI Music product</h5>
+                    <h4 class="text-secondaire"> UX Case study </h4>
+                  </div>
+                  <div class=" border-1 rounded-full bg-premiere h-4 w-4 flex justify-center items-center ">
+                    <div ><img src="assets/images/fleche.svg" alt=""></div>
+                  </div>
+                </div>
+                
+                <div class="flex justify-center items-center mt-10 lg:mt-0 " >
+                    <img class="w-70"   src="assets/images/PHOTO.svg" alt="">
+                </div>
+            </span>
+          </section>
+          <!--SECTION6666666666666666666666666666666666666666666666666666666666666666666666666666666  -->
+          <section class="bg-bgc rounded-xl border-2 p-10 mt-4 lg:order-5" >
+            <span class="" >
+                <div class="flex justify-between"  >
+                  <div class="" >
+                    <h5 class="text-trois">AI Music product</h5>
+                    <h4 class="text-secondaire"> UX Case study</h4>
+                  </div>
+                  <div class=" border-1 rounded-full bg-premiere h-4 w-4 flex justify-center items-center ">
+                    <div ><img src="assets/images/fleche.svg" alt=""></div>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center mt-10 " >
+                    <img  class="w-70" src="assets/images/PHOTO3.svg" alt="">
+                </div>
+            </span>
+          </section>
+    </div>
+      <!-- SECTION7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 -->
+       <section class="bg-bgc border-2 p-10 mt-4"  >
+        <div class="mt-8" >
+            <div  class="flex justify-center items-center">
+                <span class="flex  items-center gap-2 px-2 items-center justify-center rounded-full border-1 w-[200px] h-[20px] border-bordercol ">
+                    <div class="border-1 rounded-full  gap-2 flex w-[10px] h-[10px] bg-premiere "></div>
+                    <h5 class="text-secondaire text-sm font-[Inter]font-medium">AVAILABLE FOR JOB</h5>
+                </span>
+            </div>
+            <div class="flex   justify-between p-12 items-center">
+                <a class="text-premiere font-[Inter]" href="#">Twitter</a>
+                <a class="text-trois"  href="#">Instagram</a>
+                <a class="text-trois"  href="#">LinkdIn</a>
+            </div>
+            <div class="flex justify-center items-center"><h5 class="text-trois" >Portfolio 2025</h5></div>
+        </div>
+       </section>
+
+
 </body>
+
 </html>
